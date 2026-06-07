@@ -586,6 +586,29 @@ html,body{
 }
 
 /* ═══════════════════════════════════
+   S8b — DASHBOARDS
+═══════════════════════════════════ */
+.dash-grid{display:flex;gap:clamp(16px,2vw,28px);width:100%;flex:1;margin-top:clamp(12px,2vh,20px)}
+.dash-card{flex:1;display:flex;flex-direction:column;gap:10px}
+.dash-title{
+  font-family:var(--mono);font-weight:700;
+  font-size:var(--card-title);
+  color:var(--w);line-height:1.35;
+}
+.dash-link{
+  font-family:var(--mono);font-size:var(--text-xs);
+  color:var(--o);opacity:.8;text-decoration:none;
+}
+.dash-link:hover{opacity:1;text-decoration:underline}
+.dash-img-wrap{display:block;flex:1;overflow:hidden;border-radius:8px;border:1px solid rgba(255,255,255,.15)}
+.dash-img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+
+@media(max-width:640px){
+  .dash-grid{flex-direction:column}
+  .dash-img-wrap{height:180px}
+}
+
+/* ═══════════════════════════════════
    S10 — EXAMPLE
 ═══════════════════════════════════ */
 .ex-rows{display:flex;flex-direction:column;gap:clamp(10px,1.5vh,16px);width:100%}
