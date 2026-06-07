@@ -167,6 +167,20 @@ html,body{
 .s-orange .card-line{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)}
 .s-orange .card-line::before{background:rgba(255,255,255,.5)}
 .s-orange .pill{border:1.5px solid rgba(255,255,255,.4);background:rgba(255,255,255,.1);color:rgba(255,255,255,.9)}
+/* proc elements on orange background */
+.s-orange .proc-box{background:rgba(0,0,0,.18);border-color:rgba(255,255,255,.25)}
+.s-orange .proc-col:not(:last-child)::after{color:rgba(255,255,255,.7)}
+.s-orange .proc-items li{color:rgba(255,255,255,.9)}
+.s-orange .proc-items li::before{color:rgba(255,255,255,.7)}
+.s-orange .proc-note{color:rgba(255,255,255,.8)}
+.s-orange .proc-result{background:rgba(0,0,0,.2);border-left-color:rgba(255,255,255,.7)}
+.s-orange .pr-name{color:var(--w)}
+.s-orange .pr-sub{color:rgba(255,255,255,.65)}
+.s-orange .flt.r{background:rgba(0,0,0,.2);border-color:rgba(255,255,255,.35)}
+.s-orange .flt.c{background:rgba(0,0,0,.12);border-color:rgba(255,255,255,.2)}
+.s-orange .flt.r .flt-t{color:var(--w)}
+.s-orange .flt.c .flt-t{color:rgba(255,255,255,.85)}
+.s-orange .flt-d{color:rgba(255,255,255,.6)}
 
 /* TEAL */
 .s-teal{background:var(--t);color:var(--w)}
