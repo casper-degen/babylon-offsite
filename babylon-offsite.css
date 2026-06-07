@@ -198,7 +198,10 @@ html,body{
 .s-white .card{background:#fff;border:1px solid rgba(11,34,34,.1)}
 .s-white .card-line{background:#fff;border:1px solid rgba(11,34,34,.1)}
 .s-white .card-line::before{background:var(--o)}
-/* proc/flt elements inside white cards */
+/* proc/flt elements on white background */
+.s-white .proc-wrap{background:transparent;padding:0}
+.s-white .proc-box{background:#fff;border-color:rgba(11,34,34,.1)}
+.s-white .proc-title{color:var(--t)}
 .s-white .proc-items li{color:rgba(11,34,34,.65)}
 .s-white .proc-items li::before{color:var(--o)}
 .s-white .flt.r{background:rgba(232,89,26,.1);border-color:rgba(232,89,26,.3)}
