@@ -379,7 +379,7 @@
   <div class="ex-rows">
     <div class="ex-row">
       <div class="ex-stage hot"><div class="ex-sico">💡</div><div class="ex-slbl">Idea</div></div>
-      <div class="ex-body"><strong>TWO-VAULT SPLIT UX</strong> Guide users to split BTC into sacrificial + protected vault at peg-in.</div>
+      <div class="ex-body"><strong>TWO-VAULT SPLIT UX</strong><br>Guide users to split BTC into sacrificial + protected vault at peg-in.</div>
     </div>
     <div class="ex-row">
       <div class="ex-stage"><div class="ex-sico">💰</div><div class="ex-slbl">Revenue Filter</div></div>
@@ -418,6 +418,10 @@
       <div class="gc-title">Align on Mainnet Launch Plan</div>
       <div class="gc-desc">Cross-team alignment: what must happen before mainnet, who owns each piece, timeline between all teams.</div>
     </div>
+  </div>
+  <div class="qr-row">
+    <div id="qr-s11"></div>
+    <div class="qr-label">Scan to open deck</div>
   </div>
 </div>
 
@@ -469,6 +473,19 @@ document.addEventListener('touchend',e=>{
   const dx=e.changedTouches[0].clientX-tx;
   if(Math.abs(dx)>50)go(dx<0?1:-1);
 });
+// QR code for S11
+(function(){
+  var s=document.createElement('script');
+  s.src='https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
+  s.onload=function(){
+    new QRCode(document.getElementById('qr-s11'),{
+      text:'https://casper-degen.github.io/babylon-offsite/',
+      width:88,height:88,
+      colorDark:'#0b2222',colorLight:'#ffffff'
+    });
+  };
+  document.head.appendChild(s);
+})();
 </script>
 </body>
 </html>

@@ -693,6 +693,9 @@ html,body{
   font-size:var(--text-lg);
   color:rgba(255,255,255,.85);line-height:1.6;
 }
+.qr-row{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:clamp(14px,2.2vh,22px)}
+.qr-row canvas,.qr-row img{border-radius:6px;padding:6px;background:#fff}
+.qr-label{font-family:var(--mono);font-size:var(--text-xxs);color:rgba(255,255,255,.45);letter-spacing:.08em;text-transform:uppercase}
 
 .closing{
   margin-top:clamp(16px,2.5vh,22px);width:100%;max-width:960px;
