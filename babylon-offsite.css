@@ -198,6 +198,17 @@ html,body{
 .s-white .card{background:#fff;border:1px solid rgba(11,34,34,.1)}
 .s-white .card-line{background:#fff;border:1px solid rgba(11,34,34,.1)}
 .s-white .card-line::before{background:var(--o)}
+/* proc/flt elements inside white cards */
+.s-white .proc-items li{color:rgba(11,34,34,.65)}
+.s-white .proc-items li::before{color:var(--o)}
+.s-white .flt.r{background:rgba(232,89,26,.1);border-color:rgba(232,89,26,.3)}
+.s-white .flt.c{background:rgba(11,34,34,.05);border-color:rgba(11,34,34,.12)}
+.s-white .flt.r .flt-t{color:var(--o)}
+.s-white .flt.c .flt-t{color:var(--t)}
+.s-white .flt-d{color:rgba(11,34,34,.45)}
+.s-white .proc-result{background:rgba(232,89,26,.08);border-left-color:var(--o)}
+.s-white .pr-name{color:var(--t)}
+.s-white .pr-sub{color:rgba(11,34,34,.5)}
 
 /* ═══════════════════════════════════
    S1 — TITLE

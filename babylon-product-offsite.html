@@ -318,53 +318,64 @@
 </div>
 
 <!-- ── S9: PROCESS ── -->
-<div class="slide s-orange" id="s9">
+<div class="slide s-white" id="s9">
   <div class="logo">babylon <div class="mark mark-o"></div></div>
   <div class="label">08 · How We Work</div>
   <h2 class="h2">Product Development Process</h2>
-  <p class="lead" style="margin-bottom:clamp(14px,2vh,20px)">Structured, repeatable, transparent</p>
-  <div class="proc-wrap proc-flow">
-    <div class="proc-col">
-      <div class="proc-box">
-        <div class="proc-n" style="background:var(--o)">1</div>
-        <div class="proc-title">Idea Collection</div>
-        <ul class="proc-items">
-          <li>New features</li>
-          <li>Cusdev requests</li>
-          <li>DeFi integrations</li>
-          <li>Mechanism changes</li>
-        </ul>
-        <div class="proc-result">
-          <div class="pr-name">RFC Format</div>
-          <div class="pr-sub">Revenue assumption required</div>
-        </div>
+  <div class="ns-bar">
+    <div>
+      <div class="ns-label">Step 1</div>
+      <div class="ns-val">Idea Collection</div>
+    </div>
+    <div class="ns-sep"></div>
+    <div>
+      <div class="ns-label">Step 2</div>
+      <div class="ns-val">Triple Filter</div>
+    </div>
+    <div class="ns-sep"></div>
+    <div>
+      <div class="ns-label">Step 3</div>
+      <div class="ns-val">Prioritization</div>
+    </div>
+    <div class="ns-sep"></div>
+    <div class="ns-note">Structured, repeatable, transparent</div>
+  </div>
+  <div class="g3">
+    <div class="card">
+      <div class="kc-name">Step 1</div>
+      <div class="kc-metric">Idea Collection</div>
+      <ul class="proc-items">
+        <li>New features</li>
+        <li>Cusdev requests</li>
+        <li>DeFi integrations</li>
+        <li>Mechanism changes</li>
+      </ul>
+      <div class="proc-result">
+        <div class="pr-name">RFC Format</div>
+        <div class="pr-sub">Revenue assumption required</div>
       </div>
     </div>
-    <div class="proc-col">
-      <div class="proc-box" style="display:flex;flex-direction:column;align-items:center">
-        <div class="proc-n" style="background:var(--t)">2</div>
-        <div class="proc-title">Triple Filter</div>
-        <div class="flt-pair">
-          <div class="flt r"><div style="font-size:15px">💰</div><div class="flt-t">Revenue</div><div class="flt-d">Forecast + metrics</div></div>
-          <div class="flt c"><div style="font-size:15px">🔧</div><div class="flt-t">Capacity</div><div class="flt-d">Dev estimate</div></div>
-          <div class="flt c"><div style="font-size:15px">👥</div><div class="flt-t">Cusdev</div><div class="flt-d">User validation</div></div>
-        </div>
+    <div class="card">
+      <div class="kc-name">Step 2</div>
+      <div class="kc-metric">Triple Filter</div>
+      <div class="flt-pair" style="margin-top:clamp(10px,1.5vh,16px)">
+        <div class="flt r"><div style="font-size:15px">💰</div><div class="flt-t">Revenue</div><div class="flt-d">Forecast + metrics</div></div>
+        <div class="flt c"><div style="font-size:15px">🔧</div><div class="flt-t">Capacity</div><div class="flt-d">Dev estimate</div></div>
+        <div class="flt c"><div style="font-size:15px">👥</div><div class="flt-t">Cusdev</div><div class="flt-d">User validation</div></div>
       </div>
     </div>
-    <div class="proc-col">
-      <div class="proc-box">
-        <div class="proc-n" style="background:#0a6b4a">3</div>
-        <div class="proc-title">Prioritization</div>
-        <ul class="proc-items">
-          <li>Revenue</li>
-          <li>Competitiveness</li>
-          <li>Eng effort</li>
-          <li>UX Impact</li>
-        </ul>
-        <div class="proc-result">
-          <div class="pr-name">Dev Backlog</div>
-          <div class="pr-sub">Ranked: revenue ÷ capacity</div>
-        </div>
+    <div class="card">
+      <div class="kc-name">Step 3</div>
+      <div class="kc-metric">Prioritization</div>
+      <ul class="proc-items">
+        <li>Revenue</li>
+        <li>Competitiveness</li>
+        <li>Eng effort</li>
+        <li>UX Impact</li>
+      </ul>
+      <div class="proc-result">
+        <div class="pr-name">Dev Backlog</div>
+        <div class="pr-sub">Ranked: revenue / capacity</div>
       </div>
     </div>
   </div>
