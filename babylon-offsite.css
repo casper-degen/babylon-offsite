@@ -666,9 +666,10 @@ html,body{
   .ns-bar{flex-direction:column;align-items:flex-start;gap:12px}
   .ns-sep{width:100%;height:1px;align-self:auto}
 
-  /* S9 — triple filter stacks */
-  .flt-pair{flex-direction:column;gap:8px}
-  .flt{padding:10px 12px}
+  /* S9 — triple filter stays row on mobile (stacking makes step 2 too tall) */
+  .flt-pair{flex-direction:row;gap:6px}
+  .flt{padding:8px 6px}
+  .flt-d{font-size:10px}
 
   /* S5 — revenue bar compact */
   .rb-sym{font-size:clamp(28px,7vw,42px)}
@@ -680,7 +681,7 @@ html,body{
   /* proc-note spacing */
   .proc-note{font-size:var(--text-xxs)}
 
-  /* slide padding tighter */
-  .slide{padding:clamp(22px,5vw,40px)}
+  /* slide padding tighter — padding-top must clear the absolute logo */
+  .slide{padding:clamp(22px,5vw,40px);padding-top:58px}
   #s1 .logo,.slide .logo{top:clamp(16px,3vw,28px);left:clamp(16px,3vw,28px)}
 }
