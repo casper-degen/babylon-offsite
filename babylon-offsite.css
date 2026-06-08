@@ -693,7 +693,9 @@ html,body{
   font-size:var(--text-lg);
   color:rgba(255,255,255,.85);line-height:1.6;
 }
-.qr-row{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:clamp(14px,2.2vh,22px)}
+.s11-top{display:flex;align-items:center;justify-content:space-between;width:100%;gap:clamp(20px,3vw,40px)}
+.s11-titles{flex:1}
+.qr-row{display:flex;flex-direction:column;align-items:center;gap:6px;flex-shrink:0}
 .qr-row canvas,.qr-row img{border-radius:6px;padding:6px;background:#fff}
 .qr-label{font-family:var(--mono);font-size:var(--text-xxs);color:rgba(255,255,255,.45);letter-spacing:.08em;text-transform:uppercase}
 
